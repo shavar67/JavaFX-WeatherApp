@@ -3,6 +3,7 @@ This application uses the open weather map api to fetch the current weather cond
 
 # Libraries Used
 This project frontend was built using the material design jfoeinx library -> http://www.jfoenix.com/index.html#start
+
 Data provided by -> https://openweathermap.org
 
 # What i learned
