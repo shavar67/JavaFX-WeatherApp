@@ -9,9 +9,9 @@
 * Data provided by. -> https://openweathermap.org
 
 ### What i learned
-===============
+
 * How to use hashmaps to map json data to java objects via the google gson libary.
 * How to fetch weather data using the openweather map api (will need to create an account and get an api key).
 * Background threads used to process the api call in the background (prevents the main thread from freezing).
 
-![alt text](https://github.com/shavar67/JavaFX-WeatherApp/blob/master/src/com/shavar/weather/sample/weatherApp.jpg)
+<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="256" height="256" title="Weather app">
