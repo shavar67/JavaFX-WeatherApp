@@ -11,19 +11,20 @@
 
 ### What i learned
 
-* How to use hashmaps to map json data to java objects via the google gson libary.
+* How to use hashmaps to map json object to java objects via the google gson libary.
 * How to fetch weather data using the openweather map api (will need to create an account and get an api key).
 * Background threads used to process the api call in the background (prevents the main thread from freezing).
 
 ##### Datastructure to store json data
 `
-public static Map<String, Object> jsonToMap(String string) {
-Map<String, Object> map = new Gson().fromJson(string, new TypeToken<HashMap<String, Object>>() {
-}.getType());
-return map; }
+public static Map<String, Object> jsonToMap(String string) 
+{ Map<String, Object> map = new Gson().fromJson(string, new TypeToken<HashMap<String, Object>>(){
+  }.getType());
+    return map; 
+}
  `
  
-##### Mapping the json object to pojo
+##### Mapping the json object
 `
 Map<String, Object> respMap = jsonToMap(result.toString());
 Map<String, Object> mainMap = jsonToMap(respMap.get("main").toString());
