@@ -1,5 +1,5 @@
 # JavaFX-WeatherApp
-* This application uses the open weather map api to fetch the current weather conditions for a given location, the data is *  * parsed using the google gson library from json format to pojo.
+* This application uses the open weather map api to fetch the current weather conditions for a given location.
 
 # Libraries Used
 * This project frontend was built using the material design jfoeinx library. -> http://www.jfoenix.com/index.html#start
