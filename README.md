@@ -15,7 +15,7 @@
 * How to fetch weather data using the openweather map api (will need to create an account and get an api key).
 * Background threads used to process the api call in the background (prevents the main thread from freezing).
 
-##### Datastructure to store parsed json data
+##### Datastructure to store json data
 `
 public static Map<String, Object> jsonToMap(String string) {
 Map<String, Object> map = new Gson().fromJson(string, new TypeToken<HashMap<String, Object>>() {
@@ -23,10 +23,7 @@ Map<String, Object> map = new Gson().fromJson(string, new TypeToken<HashMap<Stri
 return map; }
  `
  
-##### The results represent the json data  
-> Wind > - > wind speed data is stored in the winMap reference.
-
-
+##### Mapping the json object to pojo
 `
 Map<String, Object> respMap = jsonToMap(result.toString());
 Map<String, Object> mainMap = jsonToMap(respMap.get("main").toString());
