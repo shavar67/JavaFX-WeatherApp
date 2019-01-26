@@ -14,4 +14,4 @@
 * How to fetch weather data using the openweather map api (will need to create an account and get an api key).
 * Background threads used to process the api call in the background (prevents the main thread from freezing).
 
-![alt text](http:)
+![alt text](http:temp.png)
