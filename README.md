@@ -2,7 +2,7 @@
 
 * This application uses the open weather map api to fetch the current weather conditions for a given location.
 
- ## Libraries Used
+ ### Libraries Used
 
 * This project frontend was built using the material design jfoeinx library. -> http://www.jfoenix.com/index.html#start
 
