@@ -5,11 +5,11 @@
  ### Libraries Used
 
 * This project frontend was built using the material design jfoeinx library. 
-  *[Jfoenix](http://www.jfoenix.com/index.html#start)
+  [Jfoenix](http://www.jfoenix.com/index.html#start)
 
 
 * Data provided by.
-*[OpenWeatherMap](https://openweathermap.org)
+[OpenWeatherMap](https://openweathermap.org)
 
 ### What i learned
 
