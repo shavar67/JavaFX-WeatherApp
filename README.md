@@ -14,4 +14,4 @@
 * How to fetch weather data using the openweather map api (will need to create an account and get an api key).
 * Background threads used to process the api call in the background (prevents the main thread from freezing).
 
-<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="256" height="256" title="Weather app">
+<img src="https://github.com/shavar67/JavaFX-WeatherApp/blob/master/src/com/shavar/weather/sample/weatherApp.jpg" width="256" height="256" title="Weather app">
