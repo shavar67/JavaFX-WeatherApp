@@ -4,9 +4,9 @@
 
  ### Libraries Used
 
-* This project frontend was built using the material design jfoeinx library. -> http://www.jfoenix.com/index.html#start
+* This project frontend was built using the material design jfoeinx library. -> (http://www.jfoenix.com/index.html#start)
 
-* Data provided by. -> https://openweathermap.org
+* Data provided by. -> (https://openweathermap.org)
 
 
 ### What i learned
@@ -15,11 +15,25 @@
 * How to fetch weather data using the openweather map api (will need to create an account and get an api key).
 * Background threads used to process the api call in the background (prevents the main thread from freezing).
 
-                       `Map<String, Object> respMap = jsonToMap(result.toString());
-			Map<String, Object> mainMap = jsonToMap(respMap.get("main").toString());
-			Map<String, Object> winMap = jsonToMap(respMap.get("wind").toString());
-			Map<String, Object> sysMap = jsonToMap(respMap.get("sys").toString());
-			Map<String, Object> cloudMap = jsonToMap(respMap.get("clouds").toString());`
+##### Datastructure to store parsed json data
+`
+public static Map<String, Object> jsonToMap(String string) {
+Map<String, Object> map = new Gson().fromJson(string, new TypeToken<HashMap<String, Object>>() {
+}.getType());
+return map; }
+ `
+ 
+##### The results represent the json data  
+> Wind > - > wind speed data is stored in the winMap reference.
+
+
+`
+Map<String, Object> respMap = jsonToMap(result.toString());
+Map<String, Object> mainMap = jsonToMap(respMap.get("main").toString());
+Map<String, Object> winMap = jsonToMap(respMap.get("wind").toString());
+Map<String, Object> sysMap = jsonToMap(respMap.get("sys").toString());
+Map<String, Object> cloudMap = jsonToMap(respMap.get("clouds").toString());
+`
 			
 
 <img src="https://github.com/shavar67/JavaFX-WeatherApp/blob/master/src/com/shavar/weather/sample/weatherApp.jpg" width="256" height="256" title="Weather app">
