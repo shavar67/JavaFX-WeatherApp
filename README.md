@@ -34,16 +34,13 @@ Map<String, Object> cloudMap = jsonToMap(respMap.get("clouds").toString());
 `
 ##### Displaying the results in our labels
 
-`degLabel.setText("Currently: " + (Math.ceil((double) mainMap.get("temp"))));
-
+`
+degLabel.setText("Currently: " + (Math.ceil((double) mainMap.get("temp"))));
 humid.setText("Humidity: " + mainMap.get("humidity") + "%");
-
 speed.setText("Wind Speeds: " + winMap.get("speed") + " mph");
-
 high.setText("High: " + (Math.ceil((double) mainMap.get("temp_max"))));
-
 low.setText("low: " + (Math.ceil((double) mainMap.get("temp_min"))));
-
-cloud.setText("Clouds: " + (Math.ceil((double) cloudMap.get("all")) + "%"));`
+cloud.setText("Clouds: " + (Math.ceil((double) cloudMap.get("all")) + "%"));
+`
 
 <img src="https://github.com/shavar67/JavaFX-WeatherApp/blob/master/src/com/shavar/weather/sample/weatherApp.jpg" width="256" height="256" title="Weather app">
