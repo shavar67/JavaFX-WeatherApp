@@ -19,7 +19,7 @@
 
 ##### Datastructure to store json data
 ```
-public static Map<String, Object> jsonToMap(String string) 
+    public static Map<String, Object> jsonToMap(String string) 
 { Map<String, Object> map = new Gson().fromJson(string, new TypeToken<HashMap<String, Object>>(){
   }.getType());
     return map; 
@@ -28,7 +28,7 @@ public static Map<String, Object> jsonToMap(String string)
  
 ##### Mapping the json data
 ```
-Map<String, Object> respMap = jsonToMap(result.toString());
+    Map<String, Object> respMap = jsonToMap(result.toString());
 Map<String, Object> mainMap = jsonToMap(respMap.get("main").toString());
 Map<String, Object> winMap = jsonToMap(respMap.get("wind").toString());
 Map<String, Object> sysMap = jsonToMap(respMap.get("sys").toString());
@@ -37,7 +37,7 @@ Map<String, Object> cloudMap = jsonToMap(respMap.get("clouds").toString());
 ##### Displaying the results in our labels
 
 ```
-degLabel.setText("Currently: " + (Math.ceil((double) mainMap.get("temp"))));
+    degLabel.setText("Currently: " + (Math.ceil((double) mainMap.get("temp"))));
 humid.setText("Humidity: " + mainMap.get("humidity") + "%");
 speed.setText("Wind Speeds: " + winMap.get("speed") + " mph");
 high.setText("High: " + (Math.ceil((double) mainMap.get("temp_max"))));
