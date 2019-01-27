@@ -18,7 +18,7 @@
 * Background threads used to process the api call in the background (prevents the main thread from freezing).
 
 ##### Datastructure to store json data
-```
+```java
   public static Map<String, Object> jsonToMap(String string) 
 { Map<String, Object> map = new Gson().fromJson(string, new TypeToken<HashMap<String, Object>>(){
   }.getType());
