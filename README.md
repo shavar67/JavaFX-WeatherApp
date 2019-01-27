@@ -27,7 +27,7 @@
  ```
  
 ##### Mapping the json data
-```
+```java
 Map<String, Object> respMap = jsonToMap(result.toString());
 Map<String, Object> mainMap = jsonToMap(respMap.get("main").toString());
 Map<String, Object> winMap = jsonToMap(respMap.get("wind").toString());
@@ -36,7 +36,7 @@ Map<String, Object> cloudMap = jsonToMap(respMap.get("clouds").toString());
 ```
 ##### Displaying the results in our labels
 
-```
+```java
 degLabel.setText("Currently: " + (Math.ceil((double) mainMap.get("temp"))));
 humid.setText("Humidity: " + mainMap.get("humidity") + "%");
 speed.setText("Wind Speeds: " + winMap.get("speed") + " mph");
