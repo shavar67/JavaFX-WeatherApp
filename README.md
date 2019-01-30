@@ -1,8 +1,6 @@
- [![BCH compliance](https://bettercodehub.com/edge/badge/shavar67/JavaFX-WeatherApp?branch=master)](https://bettercodehub.com/)
- [![CodeFactor](https://www.codefactor.io/repository/github/shavar67/javafx-weatherapp/badge)](https://www.codefactor.io/repository/github/shavar67/javafx-weatherapp)
- ![](https://img.shields.io/github/contributors/shavar67/JavaFX-WeatherApp.svg)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/shavar67/ama)
-![](https://img.shields.io/github/issues/shavar67/JavaFX-WeatherApp.svg)
+ | Better Code|CodeFactor|Other| 
+-------|--------|-----------|
+ [![BCH compliance](https://bettercodehub.com/edge/badge/shavar67/JavaFX-WeatherApp?branch=master)](https://bettercodehub.com/)|[![CodeFactor](https://www.codefactor.io/repository/github/shavar67/javafx-weatherapp/badge)](https://www.codefactor.io/repository/github/shavar67/javafx-weatherapp)|![](https://img.shields.io/github/contributors/shavar67/JavaFX-WeatherApp.svg) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/shavar67/ama) ![](https://img.shields.io/github/issues/shavar67/JavaFX-WeatherApp.svg)
  # JavaFX-WeatherApp
 
 * This application uses the open weather map api to fetch the current weather conditions for a given location.
